@@ -1,0 +1,51 @@
+# Items
+item.copper_ingot.name=銅インゴット
+
+# Armour
+item.copper_helmet.name=銅のヘルメット
+item.copper_chestplate.name=銅のチェストプレート
+item.copper_leggings.name=銅のレギンス
+item.copper_boots.name=銅のブーツ
+
+# Tools
+item.copper_axe.name=銅の斧
+item.copper_hoe.name=銅のくわ
+item.copper_pickaxe.name=銅のツルハシ
+item.copper_shovel.name=銅のシャベル
+item.copper_sword.name=銅の剣
+
+# Blocks
+#tile.aluminium_leaves.name=Aluminium Leaves
+#tile.aluminium_log.name=Aluminium Log
+#tile.aluminium_sapling.name=Aluminium Sapling
+tile.copper_block.name=銅ブロック
+tile.copper_dirt.name=銅の土
+tile.copper_leaves.name=銅の葉
+tile.copper_log.name=銅の木
+tile.copper_ore.name=銅鉱石
+tile.copper_planks.name=銅の木材
+tile.copper_sapling.name=銅の木の苗木
+tile.copper_chest.name=銅のチェスト
+#tile.santa_hat.name=Santa Hat
+tile.copper_door.name=銅のドア
+tile.copper_slab_half.name=銅のハーフブロック
+tile.copper_slab_double.name=銅ブロック
+
+# Machines
+#tile.sintering_furnace.name=Sinterer
+#tile.electric_sintering_furnace.name=Electric Sinterer
+#tile.glowstone_generator.name=Glowstone Generator
+#tile.energy_storage.name=Energy Storage
+
+# Containers
+container.copper_chest=銅のチェスト
+#container.sintering_furnace=Sinterer
+#container.electric_sintering_furnace=Electric Sinterer
+#container.glowstone_generator=Glowstone Generator
+#container.energy_storage=Energy Storage
+
+# Creative Tabs
+itemGroup.tutorialtab=Tutorial Tab
+
+# Fluids
+fluid.molten_copper=液体銅

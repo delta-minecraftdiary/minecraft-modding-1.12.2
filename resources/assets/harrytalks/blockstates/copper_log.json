@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "axis=y":  { "model": "harrytalks:copper_log" },
+    "axis=z":   { "model": "harrytalks:copper_log", "x": 90 },
+    "axis=x":   { "model": "harrytalks:copper_log", "x": 90, "y": 90 },
+    "axis=none": { "model": "harrytalks:copper_bark" }
+  }
+}

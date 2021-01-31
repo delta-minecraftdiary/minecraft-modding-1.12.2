@@ -1,0 +1,9 @@
+{
+  "parent": "block/upper_slab",
+  "textures":
+  {
+    "bottom": "harrytalks:blocks/copper_block",
+    "top": "harrytalks:blocks/copper_block",
+    "side": "harrytalks:blocks/copper_block"
+  }
+}

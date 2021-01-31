@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "variant=default": { "model": "harrytalks:copper_slab_double" }
+  }
+}

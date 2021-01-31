@@ -1,28 +1,29 @@
 package delta.harrytalks;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraftforge.event.RegistryEvent;
+import delta.harrytalks.proxy.CommonProxy;
+import delta.harrytalks.tab.TutorialTab;
+import delta.harrytalks.util.Reference;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(
-		modid = TutorialMod.MOD_ID,
-		name = TutorialMod.MOD_NAME,
-		version = TutorialMod.VERSION
+		modid = Reference.MOD_ID,
+		name = Reference.MOD_NAME,
+		version = Reference.VERSION
 )
 public class TutorialMod {
 
-	public static final String MOD_ID = "HarryTalks";
-	public static final String MOD_NAME = "TutorialMod";
-	public static final String VERSION = "1.0";
-
-	@Mod.Instance(MOD_ID)
+	@Mod.Instance(Reference.MOD_ID)
 	public static TutorialMod INSTANCE;
+
+	public static final CreativeTabs TutorialTab = new TutorialTab("tutorialtab");
+
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
+	public static CommonProxy proxy;
 
 	@Mod.EventHandler
 	public void preinit(FMLPreInitializationEvent event) {
@@ -37,28 +38,5 @@ public class TutorialMod {
 	@Mod.EventHandler
 	public void postinit(FMLPostInitializationEvent event) {
 
-	}
-
-	@GameRegistry.ObjectHolder(MOD_ID)
-	public static class Blocks {
-
-	}
-
-	@GameRegistry.ObjectHolder(MOD_ID)
-	public static class Items {
-
-	}
-
-	@Mod.EventBusSubscriber
-	public static class ObjectRegistryHandler {
-		@SubscribeEvent
-		public static void addItems(RegistryEvent.Register<Item> event) {
-
-		}
-
-		@SubscribeEvent
-		public static void addBlocks(RegistryEvent.Register<Block> event) {
-
-		}
 	}
 }
